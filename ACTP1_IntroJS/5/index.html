@@ -1,0 +1,30 @@
+<!--
+
+  Ejercicio desde cero:
+  Crear un párrafo con un lorem ipsum
+  Cada vez que se haga clic sobre el párrafo se debe mostrar una alerta
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ejercicio javascript 5</title>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+
+  <body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas perspiciatis
+  repudiandae enim odio laborum, tenetur ipsam, voluptatum ab molestiae modi nisi
+  quibusdam, similique earum sequi accusamus illum quas in praesentium.</p>
+
+  <script>
+    $("p").on("click", function () {
+    alert("hola soy una alerta");
+    });
+  </script>
+
+  </body>
+</html>
