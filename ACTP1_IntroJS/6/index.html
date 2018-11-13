@@ -22,11 +22,49 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>ejercicio 6 javascript</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>
+  $(function() {
+    $( "img", "#gallery" ).contextmenu(function (e) {
+      alert('Las imágenes tienen derecho de autor y no se pueden descargar sin el consentimiento del autor.');
+      e.preventDefault();
+    });
+  });
+</script>
 
-  </body>
+<style>
+#gallery {
+  margin: 2em auto;
+  max-width: 38%;
+  display: flex;
+}
+
+#gallery figure {
+  margin: 0 1.5%;
+  width: 30.33333%;
+}
+
+#gallery img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+#gallery figcaption {
+  margin: 1em 0;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <div id="gallery">
+    <figure><img src="http://lorempixel.com/400/200/animals/" alt=""><figcaption></figcaption></figure>
+    <figure><img src="http://lorempixel.com/400/200/city/" alt=""><figcaption></figcaption></figure>
+    <figure><img src="http://lorempixel.com/400/200/people/" alt=""><figcaption></figcaption></figure>
+  </div>
+</body>
 </html>
